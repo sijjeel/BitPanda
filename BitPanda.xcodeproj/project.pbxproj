@@ -23,6 +23,7 @@
 		39BE208E280B9043004DBEF4 /* CommodityWalletViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BE208D280B9043004DBEF4 /* CommodityWalletViewController.swift */; };
 		39BE2090280B934D004DBEF4 /* WalletsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BE208F280B934D004DBEF4 /* WalletsViewModel.swift */; };
 		39BE2092280B9380004DBEF4 /* CommodityWalletViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BE2091280B9380004DBEF4 /* CommodityWalletViewModel.swift */; };
+		39BE2094280DC4A2004DBEF4 /* Tests_AssetsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BE2093280DC4A2004DBEF4 /* Tests_AssetsViewModel.swift */; };
 		39D2E9E2280723F4000EE17D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D2E9E1280723F4000EE17D /* AppDelegate.swift */; };
 		39D2E9E4280723F4000EE17D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D2E9E3280723F4000EE17D /* SceneDelegate.swift */; };
 		39D2E9E6280723F4000EE17D /* AssetsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D2E9E5280723F4000EE17D /* AssetsViewController.swift */; };
@@ -32,25 +33,25 @@
 		39D2E9F9280723F8000EE17D /* BitPandaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D2E9F8280723F8000EE17D /* BitPandaTests.swift */; };
 		39D2EA03280723F8000EE17D /* BitPandaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D2EA02280723F8000EE17D /* BitPandaUITests.swift */; };
 		39D2EA05280723F8000EE17D /* BitPandaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D2EA04280723F8000EE17D /* BitPandaUITestsLaunchTests.swift */; };
-		39D2EA1B28072591000EE17D /* ResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D2EA1A28072591000EE17D /* ResponseModel.swift */; };
+		39D2EA1B28072591000EE17D /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D2EA1A28072591000EE17D /* Response.swift */; };
 		39D2EA1D280725F6000EE17D /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D2EA1C280725F6000EE17D /* DataModel.swift */; };
-		39D2EA1F2807263B000EE17D /* DataAttributesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D2EA1E2807263B000EE17D /* DataAttributesModel.swift */; };
-		39D2EA212807267C000EE17D /* CommodityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D2EA202807267C000EE17D /* CommodityModel.swift */; };
-		39D2EA23280726D0000EE17D /* CommodityAttributesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D2EA22280726D0000EE17D /* CommodityAttributesModel.swift */; };
+		39D2EA1F2807263B000EE17D /* DataAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D2EA1E2807263B000EE17D /* DataAttributes.swift */; };
+		39D2EA212807267C000EE17D /* Commodity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D2EA202807267C000EE17D /* Commodity.swift */; };
+		39D2EA23280726D0000EE17D /* CommodityAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D2EA22280726D0000EE17D /* CommodityAttributes.swift */; };
 		39D2EA2628072795000EE17D /* AssetGroupNameEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D2EA2528072795000EE17D /* AssetGroupNameEnum.swift */; };
 		39D2EA28280727D7000EE17D /* AssetTypeNameEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D2EA27280727D7000EE17D /* AssetTypeNameEnum.swift */; };
 		39D2EA2A2807281E000EE17D /* FamilyEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D2EA292807281E000EE17D /* FamilyEnum.swift */; };
-		39D2EA2C28072867000EE17D /* IeoPhaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D2EA2B28072867000EE17D /* IeoPhaseModel.swift */; };
-		39D2EA2E28072930000EE17D /* IeoPhaseAttributesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D2EA2D28072930000EE17D /* IeoPhaseAttributesModel.swift */; };
+		39D2EA2C28072867000EE17D /* IeoPhase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D2EA2B28072867000EE17D /* IeoPhase.swift */; };
+		39D2EA2E28072930000EE17D /* IeoPhaseAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D2EA2D28072930000EE17D /* IeoPhaseAttributes.swift */; };
 		39D2EA30280729C4000EE17D /* EndDateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D2EA2F280729C4000EE17D /* EndDateModel.swift */; };
 		39D2EA3228072A19000EE17D /* IosSupportedVersionEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D2EA3128072A19000EE17D /* IosSupportedVersionEnum.swift */; };
-		39D2EA3428072A50000EE17D /* WalletModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D2EA3328072A50000EE17D /* WalletModel.swift */; };
-		39D2EA3628072A85000EE17D /* CommodityWalletAttributesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D2EA3528072A85000EE17D /* CommodityWalletAttributesModel.swift */; };
+		39D2EA3428072A50000EE17D /* Wallet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D2EA3328072A50000EE17D /* Wallet.swift */; };
+		39D2EA3628072A85000EE17D /* CommodityWalletAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D2EA3528072A85000EE17D /* CommodityWalletAttributes.swift */; };
 		39D2EA3828072AE7000EE17D /* CommodityWalletTypeEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D2EA3728072AE7000EE17D /* CommodityWalletTypeEnum.swift */; };
-		39D2EA3A28072B0D000EE17D /* FiatModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D2EA3928072B0D000EE17D /* FiatModel.swift */; };
-		39D2EA3C28072B37000EE17D /* FiatAttributesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D2EA3B28072B37000EE17D /* FiatAttributesModel.swift */; };
-		39D2EA3E28072BB3000EE17D /* FiatWalletModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D2EA3D28072BB3000EE17D /* FiatWalletModel.swift */; };
-		39D2EA4028072BF5000EE17D /* FiatWalletAttributesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D2EA3F28072BF5000EE17D /* FiatWalletAttributesModel.swift */; };
+		39D2EA3A28072B0D000EE17D /* Fiat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D2EA3928072B0D000EE17D /* Fiat.swift */; };
+		39D2EA3C28072B37000EE17D /* FiatAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D2EA3B28072B37000EE17D /* FiatAttributes.swift */; };
+		39D2EA3E28072BB3000EE17D /* FiatWallet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D2EA3D28072BB3000EE17D /* FiatWallet.swift */; };
+		39D2EA4028072BF5000EE17D /* FiatWalletAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D2EA3F28072BF5000EE17D /* FiatWalletAttributes.swift */; };
 		39D2EA4228072E02000EE17D /* Masterdata.json in Resources */ = {isa = PBXBuildFile; fileRef = 39D2EA4128072E02000EE17D /* Masterdata.json */; };
 		39D2EA4528076574000EE17D /* FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D2EA4428076574000EE17D /* FileManager.swift */; };
 		39D2EA4728076776000EE17D /* FileResponseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D2EA4628076776000EE17D /* FileResponseHandler.swift */; };
@@ -97,6 +98,7 @@
 		39BE208D280B9043004DBEF4 /* CommodityWalletViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommodityWalletViewController.swift; sourceTree = "<group>"; };
 		39BE208F280B934D004DBEF4 /* WalletsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletsViewModel.swift; sourceTree = "<group>"; };
 		39BE2091280B9380004DBEF4 /* CommodityWalletViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommodityWalletViewModel.swift; sourceTree = "<group>"; };
+		39BE2093280DC4A2004DBEF4 /* Tests_AssetsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_AssetsViewModel.swift; sourceTree = "<group>"; };
 		39D2E9DE280723F4000EE17D /* BitPanda.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BitPanda.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		39D2E9E1280723F4000EE17D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		39D2E9E3280723F4000EE17D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -110,25 +112,25 @@
 		39D2E9FE280723F8000EE17D /* BitPandaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BitPandaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		39D2EA02280723F8000EE17D /* BitPandaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitPandaUITests.swift; sourceTree = "<group>"; };
 		39D2EA04280723F8000EE17D /* BitPandaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitPandaUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		39D2EA1A28072591000EE17D /* ResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseModel.swift; sourceTree = "<group>"; };
+		39D2EA1A28072591000EE17D /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
 		39D2EA1C280725F6000EE17D /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
-		39D2EA1E2807263B000EE17D /* DataAttributesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataAttributesModel.swift; sourceTree = "<group>"; };
-		39D2EA202807267C000EE17D /* CommodityModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommodityModel.swift; sourceTree = "<group>"; };
-		39D2EA22280726D0000EE17D /* CommodityAttributesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommodityAttributesModel.swift; sourceTree = "<group>"; };
+		39D2EA1E2807263B000EE17D /* DataAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataAttributes.swift; sourceTree = "<group>"; };
+		39D2EA202807267C000EE17D /* Commodity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Commodity.swift; sourceTree = "<group>"; };
+		39D2EA22280726D0000EE17D /* CommodityAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommodityAttributes.swift; sourceTree = "<group>"; };
 		39D2EA2528072795000EE17D /* AssetGroupNameEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetGroupNameEnum.swift; sourceTree = "<group>"; };
 		39D2EA27280727D7000EE17D /* AssetTypeNameEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetTypeNameEnum.swift; sourceTree = "<group>"; };
 		39D2EA292807281E000EE17D /* FamilyEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyEnum.swift; sourceTree = "<group>"; };
-		39D2EA2B28072867000EE17D /* IeoPhaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IeoPhaseModel.swift; sourceTree = "<group>"; };
-		39D2EA2D28072930000EE17D /* IeoPhaseAttributesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IeoPhaseAttributesModel.swift; sourceTree = "<group>"; };
+		39D2EA2B28072867000EE17D /* IeoPhase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IeoPhase.swift; sourceTree = "<group>"; };
+		39D2EA2D28072930000EE17D /* IeoPhaseAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IeoPhaseAttributes.swift; sourceTree = "<group>"; };
 		39D2EA2F280729C4000EE17D /* EndDateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndDateModel.swift; sourceTree = "<group>"; };
 		39D2EA3128072A19000EE17D /* IosSupportedVersionEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IosSupportedVersionEnum.swift; sourceTree = "<group>"; };
-		39D2EA3328072A50000EE17D /* WalletModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletModel.swift; sourceTree = "<group>"; };
-		39D2EA3528072A85000EE17D /* CommodityWalletAttributesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommodityWalletAttributesModel.swift; sourceTree = "<group>"; };
+		39D2EA3328072A50000EE17D /* Wallet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wallet.swift; sourceTree = "<group>"; };
+		39D2EA3528072A85000EE17D /* CommodityWalletAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommodityWalletAttributes.swift; sourceTree = "<group>"; };
 		39D2EA3728072AE7000EE17D /* CommodityWalletTypeEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommodityWalletTypeEnum.swift; sourceTree = "<group>"; };
-		39D2EA3928072B0D000EE17D /* FiatModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiatModel.swift; sourceTree = "<group>"; };
-		39D2EA3B28072B37000EE17D /* FiatAttributesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiatAttributesModel.swift; sourceTree = "<group>"; };
-		39D2EA3D28072BB3000EE17D /* FiatWalletModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiatWalletModel.swift; sourceTree = "<group>"; };
-		39D2EA3F28072BF5000EE17D /* FiatWalletAttributesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiatWalletAttributesModel.swift; sourceTree = "<group>"; };
+		39D2EA3928072B0D000EE17D /* Fiat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fiat.swift; sourceTree = "<group>"; };
+		39D2EA3B28072B37000EE17D /* FiatAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiatAttributes.swift; sourceTree = "<group>"; };
+		39D2EA3D28072BB3000EE17D /* FiatWallet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiatWallet.swift; sourceTree = "<group>"; };
+		39D2EA3F28072BF5000EE17D /* FiatWalletAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiatWalletAttributes.swift; sourceTree = "<group>"; };
 		39D2EA4128072E02000EE17D /* Masterdata.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Masterdata.json; sourceTree = "<group>"; };
 		39D2EA4428076574000EE17D /* FileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManager.swift; sourceTree = "<group>"; };
 		39D2EA4628076776000EE17D /* FileResponseHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileResponseHandler.swift; sourceTree = "<group>"; };
@@ -264,6 +266,7 @@
 			isa = PBXGroup;
 			children = (
 				39D2E9F8280723F8000EE17D /* BitPandaTests.swift */,
+				39BE2093280DC4A2004DBEF4 /* Tests_AssetsViewModel.swift */,
 			);
 			path = BitPandaTests;
 			sourceTree = "<group>";
@@ -355,20 +358,20 @@
 			isa = PBXGroup;
 			children = (
 				39D2EA242807277E000EE17D /* Enums */,
-				39D2EA1A28072591000EE17D /* ResponseModel.swift */,
+				39D2EA1A28072591000EE17D /* Response.swift */,
 				39D2EA1C280725F6000EE17D /* DataModel.swift */,
-				39D2EA1E2807263B000EE17D /* DataAttributesModel.swift */,
-				39D2EA202807267C000EE17D /* CommodityModel.swift */,
-				39D2EA22280726D0000EE17D /* CommodityAttributesModel.swift */,
-				39D2EA2B28072867000EE17D /* IeoPhaseModel.swift */,
-				39D2EA2D28072930000EE17D /* IeoPhaseAttributesModel.swift */,
+				39D2EA1E2807263B000EE17D /* DataAttributes.swift */,
+				39D2EA202807267C000EE17D /* Commodity.swift */,
+				39D2EA22280726D0000EE17D /* CommodityAttributes.swift */,
+				39D2EA2B28072867000EE17D /* IeoPhase.swift */,
+				39D2EA2D28072930000EE17D /* IeoPhaseAttributes.swift */,
 				39D2EA2F280729C4000EE17D /* EndDateModel.swift */,
-				39D2EA3328072A50000EE17D /* WalletModel.swift */,
-				39D2EA3528072A85000EE17D /* CommodityWalletAttributesModel.swift */,
-				39D2EA3928072B0D000EE17D /* FiatModel.swift */,
-				39D2EA3B28072B37000EE17D /* FiatAttributesModel.swift */,
-				39D2EA3D28072BB3000EE17D /* FiatWalletModel.swift */,
-				39D2EA3F28072BF5000EE17D /* FiatWalletAttributesModel.swift */,
+				39D2EA3328072A50000EE17D /* Wallet.swift */,
+				39D2EA3528072A85000EE17D /* CommodityWalletAttributes.swift */,
+				39D2EA3928072B0D000EE17D /* Fiat.swift */,
+				39D2EA3B28072B37000EE17D /* FiatAttributes.swift */,
+				39D2EA3D28072BB3000EE17D /* FiatWallet.swift */,
+				39D2EA3F28072BF5000EE17D /* FiatWalletAttributes.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -690,9 +693,9 @@
 				39BE2080280B5DBD004DBEF4 /* CommoditiesViewController.swift in Sources */,
 				39D2EA30280729C4000EE17D /* EndDateModel.swift in Sources */,
 				39BE2090280B934D004DBEF4 /* WalletsViewModel.swift in Sources */,
-				39D2EA3628072A85000EE17D /* CommodityWalletAttributesModel.swift in Sources */,
-				39D2EA3A28072B0D000EE17D /* FiatModel.swift in Sources */,
-				39D2EA3E28072BB3000EE17D /* FiatWalletModel.swift in Sources */,
+				39D2EA3628072A85000EE17D /* CommodityWalletAttributes.swift in Sources */,
+				39D2EA3A28072B0D000EE17D /* Fiat.swift in Sources */,
+				39D2EA3E28072BB3000EE17D /* FiatWallet.swift in Sources */,
 				39D2EA3228072A19000EE17D /* IosSupportedVersionEnum.swift in Sources */,
 				39BE208E280B9043004DBEF4 /* CommodityWalletViewController.swift in Sources */,
 				39D2E9E6280723F4000EE17D /* AssetsViewController.swift in Sources */,
@@ -700,28 +703,28 @@
 				39D2EA3828072AE7000EE17D /* CommodityWalletTypeEnum.swift in Sources */,
 				39BE2092280B9380004DBEF4 /* CommodityWalletViewModel.swift in Sources */,
 				39BE20772808BEF4004DBEF4 /* AssetsTableViewCell.swift in Sources */,
-				39D2EA212807267C000EE17D /* CommodityModel.swift in Sources */,
+				39D2EA212807267C000EE17D /* Commodity.swift in Sources */,
 				39BE20732808B908004DBEF4 /* FiatViewController.swift in Sources */,
 				39D2EA4528076574000EE17D /* FileManager.swift in Sources */,
 				39D2EA5228077C51000EE17D /* Constants.swift in Sources */,
-				39D2EA3C28072B37000EE17D /* FiatAttributesModel.swift in Sources */,
-				39D2EA1F2807263B000EE17D /* DataAttributesModel.swift in Sources */,
-				39D2EA4028072BF5000EE17D /* FiatWalletAttributesModel.swift in Sources */,
+				39D2EA3C28072B37000EE17D /* FiatAttributes.swift in Sources */,
+				39D2EA1F2807263B000EE17D /* DataAttributes.swift in Sources */,
+				39D2EA4028072BF5000EE17D /* FiatWalletAttributes.swift in Sources */,
 				39BE207B280B4746004DBEF4 /* CryptoCoinViewModel.swift in Sources */,
-				39D2EA3428072A50000EE17D /* WalletModel.swift in Sources */,
+				39D2EA3428072A50000EE17D /* Wallet.swift in Sources */,
 				39D2E9E2280723F4000EE17D /* AppDelegate.swift in Sources */,
-				39D2EA1B28072591000EE17D /* ResponseModel.swift in Sources */,
+				39D2EA1B28072591000EE17D /* Response.swift in Sources */,
 				39BE2079280B4251004DBEF4 /* FiatViewModel.swift in Sources */,
-				39D2EA23280726D0000EE17D /* CommodityAttributesModel.swift in Sources */,
+				39D2EA23280726D0000EE17D /* CommodityAttributes.swift in Sources */,
 				39D2EA4F280778AF000EE17D /* AssetsViewModel.swift in Sources */,
 				39D2EA2628072795000EE17D /* AssetGroupNameEnum.swift in Sources */,
-				39D2EA2E28072930000EE17D /* IeoPhaseAttributesModel.swift in Sources */,
+				39D2EA2E28072930000EE17D /* IeoPhaseAttributes.swift in Sources */,
 				39BE207E280B5846004DBEF4 /* FormatCurrencyStringExtension.swift in Sources */,
 				39D2EA28280727D7000EE17D /* AssetTypeNameEnum.swift in Sources */,
 				39D2EA5428087254000EE17D /* WalletViewController.swift in Sources */,
 				39D2EA4D28077637000EE17D /* GetCryptoData.swift in Sources */,
 				39BE208A280B70EA004DBEF4 /* FiatWalletViewModel.swift in Sources */,
-				39D2EA2C28072867000EE17D /* IeoPhaseModel.swift in Sources */,
+				39D2EA2C28072867000EE17D /* IeoPhase.swift in Sources */,
 				39D2EA2A2807281E000EE17D /* FamilyEnum.swift in Sources */,
 				39D2EA49280769D6000EE17D /* ReadJsonFileHandler.swift in Sources */,
 				39D2E9E4280723F4000EE17D /* SceneDelegate.swift in Sources */,
@@ -733,6 +736,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				39D2E9F9280723F8000EE17D /* BitPandaTests.swift in Sources */,
+				39BE2094280DC4A2004DBEF4 /* Tests_AssetsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -31,7 +31,7 @@ extension FiatViewController: UITableViewDataSource {
     }
   
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "FiatIdentifier") as! AssetsTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: Constants.CELL_IDENTIFIER) as! AssetsTableViewCell
         cell.configureFiats(with: viewModel.fiats[indexPath.row].attributes, indexPath: indexPath)
         return cell
     }

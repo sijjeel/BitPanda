@@ -7,8 +7,8 @@
 
 import Foundation
 
-struct IeoPhaseModel: Codable {
+struct IeoPhase: Codable {
     let type: String
-    let attributes: IeoPhaseAttributesModel
+    let attributes: IeoPhaseAttributes
     let id: String
 }

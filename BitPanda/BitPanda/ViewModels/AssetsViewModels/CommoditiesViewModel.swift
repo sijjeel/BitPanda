@@ -8,5 +8,5 @@
 import Foundation
 
 class CommoditiesViewModel {
-    var commodities : [CommodityModel] = [CommodityModel]()
+    var commodities : [Commodity] = [Commodity]()
 }

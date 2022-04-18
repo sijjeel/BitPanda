@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct FiatAttributesModel: Codable {
+struct FiatAttributes: Codable {
     let symbol, name: String
     let precision: Int
     let toEurRate, defaultSellAmount, numericCharacterReference, minWithdrawEuro: String

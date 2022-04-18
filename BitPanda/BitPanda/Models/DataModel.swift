@@ -9,5 +9,5 @@ import Foundation
 
 struct DataModel: Codable {
     let type: String
-    let attributes: DataAttributesModel
+    let attributes: DataAttributes
 }

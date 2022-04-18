@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct EndDateModel: Codable {
+struct EndDate: Codable {
     let dateIso8601: String
     let unix: String
 

@@ -7,11 +7,11 @@
 
 import Foundation
 
-struct DataAttributesModel: Codable {
-    let cryptocoins, commodities: [CommodityModel]
-    let fiats: [FiatModel]
-    let wallets, commodityWallets: [WalletModel]
-    let fiatwallets: [FiatWalletModel]
+struct DataAttributes: Codable {
+    let cryptocoins, commodities: [Commodity]
+    let fiats: [Fiat]
+    let wallets, commodityWallets: [Wallet]
+    let fiatwallets: [FiatWallet]
 
     enum CodingKeys: String, CodingKey {
         case cryptocoins, commodities, fiats, wallets

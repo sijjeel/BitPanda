@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct CommodityAttributesModel: Codable {
+struct CommodityAttributes: Codable {
     let symbol, name: String
     let sort: Int
     let assetTypeName: AssetTypeNameEnum
@@ -26,7 +26,7 @@ struct CommodityAttributesModel: Codable {
     let circulatingSupply: String?
     let allowedUnverified, allowedDocumented, allowedVerified: Bool
     let measurementUnit: String?
-    let ieoPhases: [IeoPhaseModel]
+    let ieoPhases: [IeoPhase]
     let info, unavailableReason, maintenanceReason, walletInfo: String
     let extraInfo, infoIntegration, infoDeu, infoEng: String
     let infoFra, unavailableReasonDeu, unavailableReasonEng, unavailableReasonFra: String

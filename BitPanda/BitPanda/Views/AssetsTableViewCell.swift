@@ -15,7 +15,9 @@ class AssetsTableViewCell: UITableViewCell {
     @IBOutlet weak var symbolLabel: UILabel!
     @IBOutlet weak var priceLabel: UILabel!
     @IBOutlet weak var assetImage: UIImageView!
+    @IBOutlet weak var defaultButton: UIButton!
   
+    var logo : String = ""
   
     // MARK: LifeCycle Methods
     override func awakeFromNib() {
@@ -26,46 +28,60 @@ class AssetsTableViewCell: UITableViewCell {
 
 extension AssetsTableViewCell {
     
-    func configureFiats(with fiat: FiatAttributesModel, indexPath: IndexPath) {
+    func configureFiats(with fiat: FiatAttributes, indexPath: IndexPath) {
         nameLabel.text = fiat.name
         symbolLabel.text = fiat.symbol
         
-        assetImage.sd_setImage(with: URL(string: fiat.logo), placeholderImage: UIImage.init(named: "notFound"), options: SDWebImageOptions.refreshCached, context: nil)
+        if UIUserInterfaceStyle.dark == .dark {
+            logo = fiat.logoDark
+        } else {
+            logo = fiat.logo
+        }
+        
+        assetImage.sd_setImage(with: URL(string: logo), placeholderImage: UIImage.init(named: "notFound"), options: SDWebImageOptions.refreshCached, context: nil)
     }
 }
 
 
 extension AssetsTableViewCell {
     
-    func configureCoins(with cryptoCoins: CommodityAttributesModel, indexPath: IndexPath) {
+    func configureCoins(with cryptoCoins: CommodityAttributes, indexPath: IndexPath) {
         nameLabel.text = cryptoCoins.name
         symbolLabel.text = cryptoCoins.symbol
         priceLabel.text = cryptoCoins.avgPrice.formatCurrencyWithLocale()
         
-        assetImage.sd_setImage(with: URL(string: cryptoCoins.logo), placeholderImage: UIImage.init(named: "notFound"), options: SDWebImageOptions.refreshCached, context: nil)
+        if UIUserInterfaceStyle.dark == .dark {
+            logo = cryptoCoins.logoDark
+        } else {
+            logo = cryptoCoins.logo
+        }
+        
+        assetImage.sd_setImage(with: URL(string: logo), placeholderImage: UIImage.init(named: "notFound"), options: SDWebImageOptions.refreshCached, context: nil)
     }
 }
 
 
 extension AssetsTableViewCell {
     
-    func configureWallets(with wallet: CommodityWalletAttributesModel, indexPath: IndexPath) {
+    func configureWallets(with wallet: CommodityWalletAttributes, indexPath: IndexPath) {
         nameLabel.text = wallet.name
         symbolLabel.text = wallet.cryptocoinSymbol
         priceLabel.text = wallet.balance
         
-//        assetImage.sd_setImage(with: URL(string: wallet.logo), placeholderImage: UIImage.init(named: "notFound"), options: SDWebImageOptions.refreshCached, context: nil)
+        if wallet.isDefault {
+            self.defaultButton.isHidden = false
+        } else {
+            self.defaultButton.isHidden = true
+        }
     }
 }
 
 
 extension AssetsTableViewCell {
     
-    func configureFiatsWallets(with wallet: FiatWalletAttributesModel, indexPath: IndexPath) {
+    func configureFiatsWallets(with wallet: FiatWalletAttributes, indexPath: IndexPath) {
         nameLabel.text = wallet.name
         symbolLabel.text = wallet.fiatSymbol
         priceLabel.text = wallet.balance
-        
-//        assetImage.sd_setImage(with: URL(string: wallet.logo), placeholderImage: UIImage.init(named: "notFound"), options: SDWebImageOptions.refreshCached, context: nil)
     }
 }

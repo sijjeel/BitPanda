@@ -7,6 +7,6 @@
 
 import Foundation
 
-struct ResponseModel: Codable {
+struct Response: Codable {
     let data: DataModel?
 }

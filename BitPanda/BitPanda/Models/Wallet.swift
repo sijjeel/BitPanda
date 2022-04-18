@@ -8,8 +8,8 @@
 import Foundation
 
 
-struct WalletModel: Codable {
+struct Wallet: Codable {
     let type: CommodityWalletTypeEnum
-    let attributes: CommodityWalletAttributesModel
+    let attributes: CommodityWalletAttributes
     let id: String
 }

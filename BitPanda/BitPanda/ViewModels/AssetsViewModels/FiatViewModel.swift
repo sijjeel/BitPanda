@@ -8,7 +8,7 @@
 import Foundation
 
 class FiatViewModel {
-    var fiats: [FiatModel] = [FiatModel]()
+    var fiats: [Fiat] = [Fiat]()
     
     /// Filter fiat array who does not have wallet associated with them.
     func filterFiatArray () {

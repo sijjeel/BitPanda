@@ -8,5 +8,5 @@
 import Foundation
 
 class CryptoCoinViewModel {
-    var coins = [CommodityModel]()
+    var coins = [Commodity]()
 }

@@ -8,7 +8,7 @@
 import Foundation
 
 
-struct CommodityWalletAttributesModel: Codable {
+struct CommodityWalletAttributes: Codable {
     let cryptocoinID, cryptocoinSymbol, balance: String
     let isDefault: Bool
     let name: String

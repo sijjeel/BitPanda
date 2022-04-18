@@ -28,17 +28,17 @@ class AssetsViewController: SJSegmentedViewController {
             let fiatViewController : FiatViewController = storyboard
                 .instantiateViewController(withIdentifier: Constants.FIAT_STORYBOARD_ID) as! FiatViewController
             fiatViewController.title = "Fiat"
-            fiatViewController.viewModel.fiats = viewModel.responseModel.data?.attributes.fiats ?? [FiatModel]()
+            fiatViewController.viewModel.fiats = viewModel.responseModel.data?.attributes.fiats ?? [Fiat]()
 
             let cryptocoinsViewController : CryptoCoinsViewController = storyboard
                 .instantiateViewController(withIdentifier: Constants.CRYPTOCOIN_STORYBOARD_ID) as! CryptoCoinsViewController
             cryptocoinsViewController.title = "Cryptocoins"
-            cryptocoinsViewController.viewModel.coins = viewModel.responseModel.data?.attributes.cryptocoins ?? [CommodityModel]()
+            cryptocoinsViewController.viewModel.coins = viewModel.responseModel.data?.attributes.cryptocoins ?? [Commodity]()
             
             let commoditiesViewController : CommoditiesViewController = storyboard
                 .instantiateViewController(withIdentifier: Constants.COMMODITIES_STORYBOARD_ID) as! CommoditiesViewController
             commoditiesViewController.title = "Commodities"
-            commoditiesViewController.viewModel.commodities = viewModel.responseModel.data?.attributes.commodities ?? [CommodityModel]()
+            commoditiesViewController.viewModel.commodities = viewModel.responseModel.data?.attributes.commodities ?? [Commodity]()
 
         
             segmentControllers = [fiatViewController,

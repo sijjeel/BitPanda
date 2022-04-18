@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct FiatWalletAttributesModel: Codable {
+struct FiatWalletAttributes: Codable {
     let fiatID, fiatSymbol, balance, name: String
     let pendingTransactionsCount: Int
 

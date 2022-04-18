@@ -7,11 +7,11 @@
 
 import Foundation
 
-class AssetsViewModel : ObservableObject {
+class AssetsViewModel {
     
     let getCryptoDataDelegate : GetCryptoDataDelegate
     
-    @Published var responseModel = ResponseModel(data: nil)
+    var responseModel = Response(data: nil)
     
     init (getCryptoDataDelegate: GetCryptoDataDelegate = GetCryptoData()) {
         self.getCryptoDataDelegate = getCryptoDataDelegate

@@ -27,17 +27,17 @@ class WalletViewController : SJSegmentedViewController {
             let fiatWalletViewController : FiatWalletViewController = storyboard
                 .instantiateViewController(withIdentifier: Constants.FIAT_WALLET_STORYBOARD_ID) as! FiatWalletViewController
             fiatWalletViewController.title = "Fiat Wallet"
-            fiatWalletViewController.viewModel.fiatWallets = viewModel.responseModel.data?.attributes.fiatwallets ?? [FiatWalletModel]()
+            fiatWalletViewController.viewModel.fiatWallets = viewModel.responseModel.data?.attributes.fiatwallets ?? [FiatWallet]()
 
             let walletsViewController : WalletsViewController = storyboard
                 .instantiateViewController(withIdentifier: Constants.WALLETS_STORYBOARD_ID) as! WalletsViewController
             walletsViewController.title = "Wallets"
-            walletsViewController.viewModel.wallets = viewModel.responseModel.data?.attributes.wallets ?? [WalletModel]()
+            walletsViewController.viewModel.wallets = viewModel.responseModel.data?.attributes.wallets ?? [Wallet]()
             
             let commodityWalletViewController : CommodityWalletViewController = storyboard
                 .instantiateViewController(withIdentifier: Constants.COMMODITY_WALLET_STORYBOARD_ID) as! CommodityWalletViewController
             commodityWalletViewController.title = "Commodities Wallet"
-            commodityWalletViewController.viewModel.commodityWallet = viewModel.responseModel.data?.attributes.commodityWallets ?? [WalletModel]()
+            commodityWalletViewController.viewModel.commodityWallet = viewModel.responseModel.data?.attributes.commodityWallets ?? [Wallet]()
 
         
             segmentControllers = [fiatWalletViewController,

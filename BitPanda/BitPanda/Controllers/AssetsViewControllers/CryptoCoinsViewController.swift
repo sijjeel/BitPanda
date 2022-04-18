@@ -29,7 +29,7 @@ extension CryptoCoinsViewController: UITableViewDataSource {
     }
   
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "FiatIdentifier") as! AssetsTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: Constants.CELL_IDENTIFIER) as! AssetsTableViewCell
         cell.configureCoins(with: viewModel.coins[indexPath.row].attributes, indexPath: indexPath)
         return cell
     }

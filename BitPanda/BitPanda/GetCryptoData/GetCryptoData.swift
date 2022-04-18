@@ -8,7 +8,7 @@
 import Foundation
 
 protocol GetCryptoDataDelegate {
-    func getCrypto(completion: @escaping(Result<ResponseModel, FileErrorEnum>) -> Void)
+    func getCrypto(completion: @escaping(Result<Response, FileErrorEnum>) -> Void)
 }
 
 class GetCryptoData : GetCryptoDataDelegate {
@@ -17,7 +17,7 @@ class GetCryptoData : GetCryptoDataDelegate {
     /// - Parameters:
     ///   - fileName: name of file
     ///   - completion: completion with either populated Model or error
-    func getCrypto(completion: @escaping(Result<ResponseModel, FileErrorEnum>) -> Void) {
-        FileManager().getCryptoData(type: ResponseModel.self, fileName: Constants.FILE_NAME, completion: completion)
+    func getCrypto(completion: @escaping(Result<Response, FileErrorEnum>) -> Void) {
+        FileManager().getCryptoData(type: Response.self, fileName: Constants.FILE_NAME, completion: completion)
     }
 }

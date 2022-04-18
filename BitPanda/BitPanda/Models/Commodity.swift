@@ -8,8 +8,8 @@
 import Foundation
 
 
-struct CommodityModel: Codable {
+struct Commodity: Codable {
     let type: AssetTypeNameEnum
-    let attributes: CommodityAttributesModel
+    let attributes: CommodityAttributes
     let id: String
 }

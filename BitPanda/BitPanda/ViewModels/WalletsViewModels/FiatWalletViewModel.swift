@@ -8,5 +8,10 @@
 import Foundation
 
 class FiatWalletViewModel {
-    var fiatWallets: [FiatWalletModel] = [FiatWalletModel]()
+    var fiatWallets: [FiatWallet] = [FiatWallet]()
+    
+    /// Rearrange Wallets in decending order by balance.
+    func reArrangeFiatsArray () {
+        fiatWallets = fiatWallets.sorted(by: { Double($0.attributes.balance) ?? 0.00 > Double($1.attributes.balance) ?? 0.00 })
+    }
 }

@@ -6,6 +6,7 @@
 //
 
 import XCTest
+import BitPanda
 
 class BitPandaUITests: XCTestCase {
 

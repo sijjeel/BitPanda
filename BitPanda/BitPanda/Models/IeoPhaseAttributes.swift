@@ -7,10 +7,10 @@
 
 import Foundation
 
-struct IeoPhaseAttributesModel: Codable {
+struct IeoPhaseAttributes: Codable {
     let name: String
     let phaseNumber: Int
-    let startDate, endDate: EndDateModel
+    let startDate, endDate: EndDate
     let maxStock, price: String
     let active: Bool
 
